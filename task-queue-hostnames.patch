@@ -1,7 +1,7 @@
-diff --git i/python/google/appengine/tools/devappserver2/dispatcher.py w/python/google/appengine/tools/devappserver2/dispatcher.py
+diff --git i/google/appengine/tools/devappserver2/dispatcher.py w/google/appengine/tools/devappserver2/dispatcher.py
 index d64d5f7..b4a9293 100644
---- i/python/google/appengine/tools/devappserver2/dispatcher.py
-+++ w/python/google/appengine/tools/devappserver2/dispatcher.py
+--- i/google/appengine/tools/devappserver2/dispatcher.py
++++ w/google/appengine/tools/devappserver2/dispatcher.py
 @@ -594,7 +594,7 @@ class Dispatcher(request_info.Dispatcher):
        try:
          _module, inst = self._port_registry.get(port)
