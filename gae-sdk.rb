@@ -9,7 +9,7 @@ class GaeSdk < Formula
 
   def install
     cd '..'
-    share.install 'gae_sdk' => name
+    share.install 'google_appengine' => name
     bin.mkpath
     %w[
       _python_runtime.py
