@@ -7,6 +7,12 @@ class GaeSdk < Formula
 
   depends_on :python
 
+  def patches
+    [
+      "https://raw.github.com/dylanvee/homebrew-gae_sdk/master/task-queue-hostnames.patch",
+    ]
+  end
+
   def install
     cd '..'
     share.install 'google_appengine' => name
