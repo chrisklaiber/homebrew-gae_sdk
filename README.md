@@ -7,11 +7,20 @@ does not conflict with existing installations of the mainline
 `google-app-engine` formula, but only one of these can be `brew link`'d at a
 time so you may want to `brew remove` it anyway.
 
-This repository is strangely named, but Homebrew wants it that way. ("Tell me
-why...")
+Issues and pull requests gladly accepted, and feel free to steal these patches
+for use in a non-Homebrew setup.
 
 # Installation
 
     brew unlink google-app-engine
     brew tap dylanvee/gae_sdk
     brew install gae-sdk
+
+# Included patches
+
+**task-queue-hostnames:** Fixes task queues on SDK version 1.8.x when using
+Nginx as a reverse proxy. Works by assigning task queue requests with an
+unrecognized Host header to the default instance instead of dropping them.
+
+**watcher-skip-files:** Modifies the mtime polling based file watcher to be
+aware of the skip_files directives in your app.yaml.
