@@ -27,10 +27,10 @@ be aware of the skip_files directives in your app.yaml.
 
 # Potential future patches
 
-**watcher-unlimited-files.patch** Don't limit the mtime polling based file
+**watcher-unlimited-files.patch:** Don't limit the mtime polling based file
 watcher to the current maximum of 10,000 files. Possibly also increase the
 current polling interval of once per second.
 
-**fsevents-file-watcher.patch** Restore and make corrections to the
+**fsevents-file-watcher.patch:** Restore and make corrections to the
 FSEvents-based file watcher for Mac OS X. See the comment at the bottom of
 google/appengine/tools/devappserver2/file_watcher.py.
