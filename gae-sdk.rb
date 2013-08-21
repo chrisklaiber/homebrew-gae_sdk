@@ -5,8 +5,6 @@ class GaeSdk < Formula
   url 'http://googleappengine.googlecode.com/files/google_appengine_1.8.3.zip'
   sha1 '827468f89c78f292c28ceac50e6109c8d649fa61'
 
-  depends_on :python
-
   def patches
     [
       "https://raw.github.com/dylanvee/homebrew-gae_sdk/master/task-queue-hostnames.patch",
