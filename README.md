@@ -18,9 +18,9 @@ for use in a non-Homebrew setup.
 
 # Included patches
 
-**task-queue-hostnames:** Fixes task queues on SDK version 1.8.x when using
-Nginx as a reverse proxy. Works by assigning task queue requests with an
+**task-queue-hostnames.patch:** Fixes task queues on SDK version 1.8.x when
+using Nginx as a reverse proxy. Works by assigning task queue requests with an
 unrecognized Host header to the default instance instead of dropping them.
 
-**watcher-skip-files:** Modifies the mtime polling based file watcher to be
-aware of the skip_files directives in your app.yaml.
+**watcher-skip-files.patch:** Modifies the mtime polling based file watcher to
+be aware of the skip_files directives in your app.yaml.
